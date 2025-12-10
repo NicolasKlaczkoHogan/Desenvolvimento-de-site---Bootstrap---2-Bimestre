@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valhalla Forge - Contato</title>
+    <!-- Bootstrap CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS Personalizado -->
+    <link href="css/estilo.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="Valhalla Forge Logo" class="d-inline-block align-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="equipe.html">Equipe</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contato.html">Contato</a></li>
+                </ul>
+                <div class="d-flex">
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+
+    <!-- Cabeçalho da Página -->
+    <header class="bg-dark text-white py-5 mt-5">
+        <div class="container text-center">
+            <h1 class="display-4">Entre em <span class="text-dourado">Contato</span></h1>
+            <p class="lead">Tire suas dúvidas, faça um orçamento ou visite nossa oficina.</p>
+        </div>
+    </header>
+
+    <!-- Seção Contato (Formulário + Mapa) -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Formulário -->
+                <div class="col-lg-6">
+                    <div class="bg-white p-4 rounded shadow">
+                        <h2 class="mb-4">Envie uma Mensagem</h2>
+                        <form id="formContato">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Seu nome" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control" placeholder="Seu e-mail" required>
+                                </div>
+                                <div class="col-12">
+                                    <input type="text" class="form-control" placeholder="Assunto" required>
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control" rows="5" placeholder="Sua mensagem" required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="newsletter">
+                                        <label class="form-check-label" for="newsletter">
+                                            Quero receber novidades por e-mail
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn btn-dourado btn-lg">Enviar Mensagem</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- Informações e Mapa -->
+                <div class="col-lg-6">
+                    <div class="bg-white p-4 rounded shadow mb-4">
+                        <h2 class="mb-4">Informações de Contato</h2>
+                        <!-- Dentro de contato.html (na seção onde o mapa deveria aparecer) -->
+                        <div class="container my-5">
+                            <div class="row justify-content-center">
+                                <div class="col-12">
+                                    <h2 class="text-center mb-4">Nosso Localização</h2>
+                                    <!-- Mapa Embed (substitua pelo seu link) -->
+                                    <div class="map-container ratio ratio-16x9">
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30717.601082657075!2d-47.91437566280365!3d-15.766994638958737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3a46ff7ee93f%3A0xaceeb379d23571b7!2sCEUB!5e0!3m2!1sen!2sbr!4v1765296956882!5m2!1sen!2sbr"
+                                            allowfullscreen=""
+                                            loading="lazy"
+                                            referrerpolicy="no-referrer-when-downgrade">
+                                        </iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start mb-3">
+                            <i class="fas fa-phone fa-2x text-dourado me-3"></i>
+                            <div>
+                                <h5>Telefone</h5>
+                                <p class="mb-0">+47 123 45 678<br>+47 987 65 432 (WhatsApp)</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start mb-3">
+                            <i class="fas fa-envelope fa-2x text-dourado me-3"></i>
+                            <div>
+                                <h5>E-mail</h5>
+                                <p class="mb-0">contato@valhallaforge.com<br>vendas@valhallaforge.com</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start">
+                            <i class="fas fa-clock fa-2x text-dourado me-3"></i>
+                            <div>
+                                <h5>Horário de Funcionamento</h5>
+                                <p class="mb-0">Segunda a Sexta: 9h - 18h<br>Sábado: 10h - 14h<br>Domingo: Fechado</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção FAQ -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Perguntas <span class="text-dourado">Frequentes</span></h2>
+            <div class="accordion" id="faqAcordeon">
+                <!-- Pergunta 1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                            Quanto tempo leva para produzir uma espada personalizada?
+                        </button>
+                    </h2>
+                    <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAcordeon">
+                        <div class="accordion-body">
+                            O tempo varia de acordo com a complexidade do projeto, mas geralmente leva entre 4 a 8 semanas.
+                            Espadas com designs mais elaborados podem levar até 12 semanas.
+                        </div>
+                    </div>
+                </div>
+                <!-- Pergunta 2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                            Vocês enviam para outros países?
+                        </button>
+                    </h2>
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAcordeon">
+                        <div class="accordion-body">
+                            Sim, enviamos para todo o mundo! O frete é calculado no checkout com base no destino e peso do produto.
+                            Para países fora da Europa, pode haver taxas de importação que são responsabilidade do cliente.
+                        </div>
+                    </div>
+                </div>
+                <!-- Pergunta 3 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                            Posso visitar a oficina?
+                        </button>
+                    </h2>
+                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAcordeon">
+                        <div class="accordion-body">
+                            Sim! Nossa oficina em Oslo está aberta para visitas de segunda a sexta, das 9h às 17h.
+                            Recomendamos agendar com antecedência pelo telefone ou e-mail.
+                        </div>
+                    </div>
+                </div>
+                <!-- Pergunta 4 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                            Vocês fazem réplicas de itens específicos da história?
+                        </button>
+                    </h2>
+                    <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAcordeon">
+                        <div class="accordion-body">
+                            Sim, fazemos réplicas personalizadas de itens históricos. Basta nos enviar referências (imagens, descrições, medidas)
+                            e nossa equipe de designers criará um projeto exclusivo para você.
+                        </div>
+                    </div>
+                </div>
+                <!-- Pergunta 5 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                            Qual a garantia dos produtos?
+                        </button>
+                    </h2>
+                    <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAcordeon">
+                        <div class="accordion-body">
+                            Todos os nossos produtos têm garantia de 1 ano contra defeitos de fabricação.
+                            Itens danificados por uso inadequado não estão cobertos pela garantia.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                    <h4><i class="fas fa-hammer me-2"></i>Valhalla Forge</h4>
+                    <p class="small">© 2023 Valhalla Forge. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h5>Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white text-decoration-none">Início</a></li>
+                        <li><a href="sobre.html" class="text-white text-decoration-none">Sobre</a></li>
+                        <li><a href="produtos.html" class="text-white text-decoration-none">Produtos</a></li>
+                        <li><a href="equipe.html" class="text-white text-decoration-none">Equipe</a></li>
+                        <li><a href="contato.html" class="text-white text-decoration-none">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-center text-md-end">
+                    <h5>Redes Sociais</h5>
+                    <a href="#" class="text-white me-2"><i class="fab fa-facebook-f fa-lg"></i></a>
+                    <a href="#" class="text-white me-2"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="#" class="text-white me-2"><i class="fab fa-youtube fa-lg"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-tiktok fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- JS Personalizado -->
+    <script src="js/script.js"></script>
+</body>
+</html>

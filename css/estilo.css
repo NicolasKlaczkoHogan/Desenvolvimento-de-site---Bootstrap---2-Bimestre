@@ -1,0 +1,192 @@
+/* Variáveis de cor (ajuste conforme seu Figma) */
+:root {
+    --dourado: #D4AF37;
+    --preto: #121212;
+    --vermelho-escuro: #6B1A1A;
+    --cinza: #333;
+    --branco: #f8f9fa;
+}
+
+body {
+    background-color: #121212 !important; /* Fundo escuro (quase preto) */
+    color: #e0e0e0 !important;           /* Texto cinza claro (boa legibilidade) */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte moderna */
+}
+
+/* Links no corpo */
+body a {
+    color: #d4af37 !important; /* Dourado (Valhalla Forge) */
+    text-decoration: none !important; /* Remove sublinhado */
+}
+
+body a:hover {
+    color: #f5f5f581 !important; /* Branco ao passar o mouse */
+    text-decoration: underline !important; /* Sublinhado no hover */
+}
+
+
+.card {
+    background-color: #2d2d2d; /* Cinza escuro (melhor contraste) */
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(212, 175, 55, 0.2);
+    border-color: rgba(212, 175, 55, 0.6);
+}
+
+.text-dourado {
+    color: var(--dourado) !important;
+}
+
+.bg-dourado {
+    background-color: var(--dourado) !important;
+}
+
+.btn-dourado {
+    background-color: var(--dourado);
+    color: var(--preto);
+    border: 1px solid var(--dourado);
+    transition: all 0.3s ease;
+}
+
+.btn-dourado:hover {
+    background-color: var(--preto);
+    color: var(--dourado);
+    border-color: var(--dourado);
+}
+
+.btn-outline-dourado {
+    color: var(--dourado);
+    border: 1px solid var(--dourado);
+    transition: all 0.3s ease;
+}
+
+.btn-outline-dourado:hover {
+    background-color: var(--dourado);
+    color: var(--preto);
+}
+
+/* Estilo para a navbar */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    color: var(--dourado) !important;
+    font-weight: 500;
+}
+
+.navbar-brand img {
+    height: 35px; /* Reduzido de 40px para 35px */
+    width: auto;
+    max-width: 150px; /* Limita a largura máxima */
+    object-fit: contain; /* Mantém proporções */
+}
+
+.carousel-caption {
+    bottom: 3rem;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--dourado);
+    background-color: rgba(212, 175, 55, 0.1);
+    font-weight: 500;
+}
+
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23D4AF37'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.form-control:focus {
+    border-color: var(--dourado);
+    box-shadow: 0 0 0 0.25rem rgba(212, 175, 55, 0.25);
+}
+
+.ratio-16x9 {
+    background: #f8f9fa;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+footer a:hover {
+    color: var(--dourado) !important;
+}
+
+.rating {
+    font-size: 1.2rem;
+    color: var(--dourado);
+}
+
+.accordion-item {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    border-radius: 5px !important;
+    overflow: hidden;
+}
+
+.fa-map-marker-alt, .fa-phone, .fa-envelope, .fa-clock {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(212, 175, 55, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+/* === MAPA RESPONSIVO (BOOTSTRAP) === */
+.map-container {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2rem !important; /* Espaço abaixo do mapa */
+}
+
+.map-container iframe {
+    width: 100% !important;
+    height: 100% !important; /* Preenche o container */
+    border: none !important;
+}
+
+/* Garante que o rodapé fique no fundo */
+footer {
+    width: 100%;
+    margin-top: auto !important; /* Empurra o rodapé para baixo */
+}
+
+.navbar-nav {
+    flex-direction: row !important; 
+    gap: 1rem; 
+    align-items: center; 
+}
+
+
+@media (min-width: 992px) {
+    .navbar-collapse {
+        display: flex !important; 
+        justify-content: flex-end; 
+    }
+}
+
+
+.navbar-nav .nav-item {
+    margin: 0 0.5rem;
+    padding: 0;
+}

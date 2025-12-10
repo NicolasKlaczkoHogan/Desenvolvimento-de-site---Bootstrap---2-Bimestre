@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valhalla Forge - Início</title>
+    <!-- Bootstrap CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS Personalizado -->
+    <link href="css/estilo.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="Valhalla Forge Logo" class="d-inline-block align-top">
+                <a><i class="fas fa-hammer me-2"></i>Valhalla Forge</a>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <a class="nav-item"><a class="nav-link active" href="index.html">Início</a></a>
+                    <a class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></a>
+                    <a class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></a>
+                    <a class="nav-item"><a class="nav-link" href="equipe.html">Equipe</a></a>
+                    <a class="nav-item"><a class="nav-link" href="contato.html">Contato</a></a>
+                </ul>
+                <div class="d-flex">
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carrossel de Destaque -->
+    <header class="mt-5">
+        <div id="carouselDestaque" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <img src="img/sword.png" class=d-block w-100" alt="Espada Viking">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 p-3 rounded">
+                        <h2>Espadas Forjadas à Mão</h2>
+                        <p>Inspiradas nas lendas nórdicas.</p>
+                        <a href="produtos.html" class="btn btn-dourado">Ver Produtos</a>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <img src="img/coroa.png" class="d-block w-100" alt="Armadura Medieval">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 p-3 rounded">
+                        <h2>Armaduras Personalizadas</h2>
+                        <p>Proteção e estilo para guerreiros modernos.</p>
+                        <a href="produtos.html" class="btn btn-dourado">Explorar</a>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <img src="img/escudo.png" class="d-block w-100" alt="Escudo Medieval">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 p-3 rounded">
+                        <h2>Escudo Medieval</h2>
+                        <p>Ferramentas protetoras com design histórico.</p>
+                        <a href="produtos.html" class="btn btn-dourado">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselDestaque" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselDestaque" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Seção de Introdução -->
+    <section class="py-5 bg-light">
+        <div class="container text-center">
+            <h1 class="display-4 mb-4">Bem-vindo à <span class="text-dourado">Valhalla Forge</span></h1>
+            <p class="lead mb-5">
+                Somos artesãos especializados em recrear armaduras, espadas e acessórios medievais com precisão histórica.
+                Cada peça é forjada à mão, usando técnicas tradicionais e materiais de alta qualidade.
+            </p>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-body text-center">
+                            <i class="fas fa-shield-alt fa-3x text-dourado mb-3"></i>
+                            <h3 class="card-title">Armaduras</h3>
+                            <p class="card-text">Conjuntos completos de armaduras medievais, personalizáveis e funcionais.</p>
+                            <a href="produtos.html" class="btn btn-outline-dourado">Ver Armaduras</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-body text-center">
+                            <i class="fas fa-sword fa-3x text-dourado mb-3"></i>
+                            <h3 class="card-title">Espadas</h3>
+                            <p class="card-text">Réplicas de espadas históricas, desde vikings até cavaleiros medievais.</p>
+                            <a href="produtos.html" class="btn btn-outline-dourado">Ver Espadas</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-body text-center">
+                            <i class="fas fa-helmet-battle fa-3x text-dourado mb-3"></i>
+                            <h3 class="card-title">Acessórios</h3>
+                            <p class="card-text">Escudos, machados, cintos e outros itens para completar seu equipamento.</p>
+                            <a href="produtos.html" class="btn btn-outline-dourado">Ver Acessórios</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                    <h4><i class="fas fa-hammer me-2"></i>Valhalla Forge</h4>
+                    <p class="small">© 2023 Valhalla Forge. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h5>Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <a><a href="index.html" class="text-white text-decoration-none">Início</a></a>
+                        <a><a href="sobre.html" class="text-white text-decoration-none">Sobre</a></a>
+                        <a><a href="produtos.html" class="text-white text-decoration-none">Produtos</a></a>
+                        <a><a href="equipe.html" class="text-white text-decoration-none">Equipe</a></a>
+                        <a><a href="contato.html" class="text-white text-decoration-none">Contato</a></a>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-center text-md-end">
+                    <h5>Redes Sociais</h5>
+                    <a href="#" class="text-white me-2"><i class="fab fa-facebook-f fa-lg"></i></a>
+                    <a href="#" class="text-white me-2"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="#" class="text-white me-2"><i class="fab fa-youtube fa-lg"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-tiktok fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- JS Personalizado -->
+    <script src="js/script.js"></script>
+</body>
+</html>
